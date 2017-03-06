@@ -7,14 +7,13 @@ Page({
   // 标注的数组
   markers: []
   },
-  // https://b2b.ezparking.com.cn/rtpi-service/parking?type=status&key=4tj2bDvzSDHb
   // header: {'content-type': 'application/json'}
   onLoad: function () {
     var that = this
     // 调用网络请求, 请求停车场数据
     // list: [{ header: '今日热闻' }].concat(res.data.stories)
    wx.request({
-     url: 'https://b2b.ezparking.com.cn/rtpi-service/parking?type=status&key=4tj2bDvzSDHb',
+     url: '',
      data: {},
      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
      header: { 'content-type': 'application/json' }, // 设置请求的 header
