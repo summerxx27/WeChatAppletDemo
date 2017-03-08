@@ -5,15 +5,27 @@ var dataArray = new Array()
 Page({
   data: {  
   // 标注的数组
-  markers: []
+  markers: [],
+  controls: [{
+      id: 2000,
+      iconPath: '/pages/images/tuijian.png',
+      position: {
+        left: 375 - 120,
+        top: 50,
+        width: 100,
+        height: 40
+      },
+      clickable: true
+    }]
   },
   // header: {'content-type': 'application/json'}
   onLoad: function () {
     var that = this
+    this.animation = wx.createAnimation()
     // 调用网络请求, 请求停车场数据
     // list: [{ header: '今日热闻' }].concat(res.data.stories)
    wx.request({
-     url: '',
+     url: 'https://b2b.ezparking.com.cn/rtpi-service/parking?type=status&key=4tj2bDvzSDHb',
      data: {},
      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
      header: { 'content-type': 'application/json' }, // 设置请求的 header
@@ -79,12 +91,40 @@ Page({
     console.log(e.type)
   },
   markertap(e) {
-    console.log(e.markerId)
+
     // 点击相应的坐标点取出相应的信息
     console.log(dataArray[e.markerId])
+    console.log(e.markerId)
+    this.animation.translate(Math.random() * 100 - 50, Math.random() * 100 - 50).step()
+    this.setData({ animation: this.animation.export() })
+    console.log('哈哈哈哈哈哈哈')
     
   },
   controltap(e) {
     console.log(e.controlId)
+    switch (e.controlId)
+    {
+      case 2000:
+            console.log('点击了推荐停车场')
+            wx.navigateTo({
+              url: 'pages/index/detail/detail',
+              success: function(res){
+                // success
+              },
+              fail: function() {
+                // fail
+              },
+              complete: function() {
+                // complete
+              }
+            })
+            break
+      default: break
+    }
+  },
+  setDisabled: function(e) {
+    this.animation.translate(Math.random() * 100 - 50, Math.random() * 100 - 50).step()
+    this.setData({ animation: this.animation.export() })
   },
 })
+

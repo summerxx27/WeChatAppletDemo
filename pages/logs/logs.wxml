@@ -1,6 +1,5 @@
 <!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<view class="btn-area">
+  <navigator url="pages/detail/detail" hover-class="navigator-hover">跳转到新页面</navigator>
 </view>
+

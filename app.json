@@ -2,12 +2,13 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/setup/setup"
+    "pages/setup/setup",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "夏天然后",
+    "navigationBarTitleText": "夏小天",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {

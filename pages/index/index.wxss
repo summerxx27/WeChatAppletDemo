@@ -9,7 +9,7 @@
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
-  border-radius: 30%;
+  
 }
 
 .userinfo-nickname {
@@ -22,10 +22,18 @@
 
 /** wxss **/
 /** 修改button默认的点击态样式类**/
-.button-hover {
-  background-color: red;
-}
-/** 添加自定义button点击态样式类**/
-.other-button-hover {
+/*.container {
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: yellow;
+}*/
+.bottomView {
+  width: 102rpx;
+  height: 102rpx;
+  border-radius: 51rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 50%;
   background-color: blue;
 }

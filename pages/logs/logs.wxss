@@ -1,8 +1,16 @@
-.log-list {
+/*.log-list {
   display: flex;
   flex-direction: column;
   padding: 40rpx;
 }
 .log-item {
   margin: 10rpx;
+}*/
+.btn-area {
+  top: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  height: 100px;
+  background-color: lightgray;
+  border-radius: 30%;
 }

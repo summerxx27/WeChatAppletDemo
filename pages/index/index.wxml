@@ -1,4 +1,5 @@
 
+
 <!--index.wxml
 <!--<view class="container">
  <!--绑定事件-->
@@ -12,6 +13,21 @@
     <!--<text class="user-motto">{{motto}}</text>-->
   <!--</view>-->
 <!--</view>-->
-<map id="map" longitude="121.5128895" latitude="31.237524" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 578px;"></map>
+<!--<view class="container">-->
+<!-- map -->
+<!--<view class="container">-->
+
+<map id="map" longitude="121.5128895" latitude="31.237524" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 578px;">
+<view class="bottomView"></view>
+</map>
+
+<!--
+<map id="map" longitude="121.5128895" latitude="31.237524" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 578px;">
+<view class="bottomView"></view>
+</map>-->
+
+<!--</view>-->
+<!--<view class="animation-element" animation="{{animation}}"></view>-->
+
 
 
