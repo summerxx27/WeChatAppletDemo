@@ -3,5 +3,6 @@ Page({
     this.setData({
       title: options.title
     })
+    console.log('tuijian')
   }
 })

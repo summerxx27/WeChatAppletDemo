@@ -1,3 +1,4 @@
+
 //index.js
 //获取应用实例
 var app = getApp()
@@ -25,7 +26,7 @@ Page({
     // 调用网络请求, 请求停车场数据
     // list: [{ header: '今日热闻' }].concat(res.data.stories)
    wx.request({
-     url: 'https://b2b.ezparking.com.cn/rtpi-service/parking?type=status&key=4tj2bDvzSDHb',
+     url: '',
      data: {},
      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
      header: { 'content-type': 'application/json' }, // 设置请求的 header
@@ -107,7 +108,7 @@ Page({
       case 2000:
             console.log('点击了推荐停车场')
             wx.navigateTo({
-              url: 'pages/index/detail/detail',
+              url: '../detail/detail',
               success: function(res){
                 // success
               },
@@ -121,10 +122,6 @@ Page({
             break
       default: break
     }
-  },
-  setDisabled: function(e) {
-    this.animation.translate(Math.random() * 100 - 50, Math.random() * 100 - 50).step()
-    this.setData({ animation: this.animation.export() })
   },
 })
 

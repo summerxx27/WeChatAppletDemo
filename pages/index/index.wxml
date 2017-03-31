@@ -18,16 +18,24 @@
 <!--<view class="container">-->
 
 <map id="map" longitude="121.5128895" latitude="31.237524" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 578px;">
-<view class="bottomView"></view>
+<view class="bottomView">
+<!-- 红色的View -->
+<view class="redView">
+</view>
+<!-- 黄色的View -->
+<view class="yellowView">
+</view>
+<!-- 绿色的View -->
+<view class="greenView">
+</view>
+<!-- 白色的View -->
+<view class="whiteView">
+</view>
+
+</view>
 </map>
 
-<!--
-<map id="map" longitude="121.5128895" latitude="31.237524" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 578px;">
-<view class="bottomView"></view>
-</map>-->
 
-<!--</view>-->
-<!--<view class="animation-element" animation="{{animation}}"></view>-->
 
 
 
