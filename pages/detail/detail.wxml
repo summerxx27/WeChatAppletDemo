@@ -1,3 +1,21 @@
-<!--pages/index/detail/detail.wxml-->
-<view style="text-align:center"> {{title}} </view>
-<view> 点击左上角返回回到之前页面 </view>
+<view class="news-item-container">
+    <block wx:for="{{list}}" wx:for-index="id">
+      <navigator url="../index/index">
+        <view class="news-item" >
+          <!-- name -->
+          <view class="news-item-left">
+            <text class="news-item-name">{{"停车场名称: " + item.name}}</text>
+            <text class="news-item-address">{{"停车场地址: " + item.address}}</text>
+          </view>
+          <!-- Image -->
+          <view class="news-item-right">
+            <image src="{{item.url}}" class="news-image"/>
+          </view>
+        </view>
+
+      </navigator>
+    </block>
+    <!-- loadMore -->
+    <button type="primary" class="load-btn"  loading="{{loading}}" plain="{{plain}}" bindtap="loadMore"> 更多 </button>
+</view>
+
